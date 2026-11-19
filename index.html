@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f5f7">
+<title>Mimis OBD - Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f5f5f7;
+    --panel: #fff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --line: #e5e5ea;
+    --accent: #0071e3;
+    --accent-soft: #eaf3ff;
+    --shadow: 0 8px 28px rgba(0, 0, 0, .045);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+  body { margin: 0; min-height: 100vh; color: var(--text); background: var(--bg); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; letter-spacing: -.01em; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: #004f9e; }
+  button, input { font: inherit; }
+  .shell { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: 34px 0 72px; }
+  .topline { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-bottom: 28px; }
+  .brand { display: inline-flex; gap: 10px; align-items: center; color: var(--text); font-weight: 700; letter-spacing: -.02em; text-decoration: none; }
+  .brand-mark { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; color: #fff; background: #1d1d1f; font-size: 17px; font-weight: 700; }
+  .secure { color: var(--muted); font-size: 13px; }
+  .hero { padding: clamp(28px, 5vw, 54px); border: 1px solid rgba(0,0,0,.04); border-radius: 24px; background: #fff; box-shadow: var(--shadow); }
+  .eyebrow { color: var(--accent); font-size: 12px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; }
+  h1 { max-width: 760px; margin: 8px 0 10px; font-size: clamp(32px, 5vw, 54px); line-height: 1.08; letter-spacing: -.055em; font-weight: 700; }
+  .updated { margin: 0; color: var(--muted); font-size: 14px; }
+  .hero-rule { width: 40px; height: 3px; margin-top: 24px; border-radius: 99px; background: var(--accent); }
+  .layout { display: grid; grid-template-columns: 270px minmax(0, 1fr); align-items: start; gap: 26px; margin-top: 26px; }
+  .side { position: sticky; top: 20px; }
+  .tools, .toc, .policy { border: 1px solid rgba(0,0,0,.045); background: var(--panel); box-shadow: var(--shadow); }
+  .tools { display: flex; gap: 10px; align-items: center; padding: 11px 14px; border-radius: 13px; }
+  .search-icon { flex: 0 0 auto; color: var(--muted); font-size: 18px; }
+  #search { min-width: 0; width: 100%; border: 0; outline: 0; color: var(--text); background: transparent; font-size: 14px; }
+  #search::placeholder { color: #86868b; }
+  #search:focus-visible { outline: 2px solid rgba(0,113,227,.35); outline-offset: 5px; border-radius: 3px; }
+  .toc { margin-top: 13px; padding: 18px 14px; border-radius: 16px; }
+  .toc-title { margin: 0 0 12px 8px; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+  #toc-list { display: grid; gap: 3px; }
+  #toc-list a { padding: 8px 10px; border-radius: 9px; color: #515154; font-size: 13px; line-height: 1.4; text-decoration: none; transition: color .18s, background .18s; }
+  #toc-list a:hover, #toc-list a.active { color: var(--accent); background: var(--accent-soft); }
+  .policy { min-width: 0; padding: clamp(23px, 4vw, 48px); border-radius: 20px; }
+  .intro { margin: 0 0 30px; color: #424245; font-size: 17px; }
+  .policy section { min-width: 0; padding: 24px 0; border-top: 1px solid var(--line); scroll-margin-top: 24px; animation: rise .45s both; }
+  .policy section:nth-of-type(2) { animation-delay: .04s; }
+  .policy section:nth-of-type(3) { animation-delay: .08s; }
+  .policy section:nth-of-type(4) { animation-delay: .12s; }
+  .policy section:nth-of-type(5) { animation-delay: .16s; }
+  .policy section:nth-of-type(6) { animation-delay: .20s; }
+  .policy section:nth-of-type(7) { animation-delay: .24s; }
+  .policy section:nth-of-type(8) { animation-delay: .28s; }
+  .policy section:nth-of-type(9) { animation-delay: .32s; }
+  .policy section:nth-of-type(10) { animation-delay: .36s; }
+  h2 { display: flex; align-items: center; gap: 10px; margin: 0 0 12px; font-size: clamp(18px, 2vw, 21px); line-height: 1.35; letter-spacing: -.025em; font-weight: 650; }
+  h2::before { content: ""; flex: 0 0 auto; width: 4px; height: 21px; border-radius: 8px; background: var(--accent); }
+  p { margin: 0 0 14px; color: #424245; }
+  section p:last-child { margin-bottom: 0; }
+  ul { margin: 12px 0 16px; padding: 0; list-style: none; }
+  li { position: relative; margin: 8px 0; padding: 9px 13px 9px 30px; border: 1px solid #ededf0; border-radius: 11px; color: #424245; background: #fafafc; }
+  li::before { content: ""; position: absolute; left: 13px; top: 18px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+  code { padding: 2px 6px; border-radius: 5px; color: #075db5; background: #f0f5fb; font-size: .9em; }
+  footer { margin-top: 26px; padding: 24px 0 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  .footer-brand { display: inline-block; margin-top: 8px; color: #424245; font-weight: 700; letter-spacing: .08em; }
+  .to-top { position: fixed; right: 24px; bottom: 24px; z-index: 3; width: 44px; height: 44px; border: 1px solid #e1e1e5; border-radius: 50%; color: #fff; background: #1d1d1f; box-shadow: var(--shadow); opacity: 0; pointer-events: none; transform: translateY(8px); transition: .25s; cursor: pointer; }
+  .to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+  .progress { position: fixed; z-index: 5; top: 0; left: 0; width: 0; height: 3px; background: var(--accent); }
+  .empty { display: none; padding: 22px; color: var(--muted); text-align: center; }
+  mark.search-match { color: #1d1d1f; background: #ffe58a; border-radius: 3px; box-shadow: 0 0 0 2px #ffe58a; }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @media (max-width: 850px) { .layout { grid-template-columns: 1fr; } .side { position: static; } .toc { padding: 14px; } #toc-list { display: flex; overflow-x: auto; padding-bottom: 3px; } #toc-list a { flex: 0 0 auto; } }
+  @media (max-width: 540px) { .shell { width: min(100% - 24px, 1180px); padding-top: 18px; } .topline { margin-bottom: 16px; } .secure { font-size: 11px; } .hero { border-radius: 22px; } .policy { border-radius: 19px; } .policy section { padding: 20px 0; } .intro { font-size: 16px; } li { padding-right: 10px; } .to-top { right: 14px; bottom: 14px; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="shell" id="top">
+  <div class="topline">
+    <a class="brand" href="#top" aria-label="Mimis OBD privacy policy, top">
+      <span class="brand-mark" aria-hidden="true">M</span><span>MIMIS OBD</span>
+    </a>
+    <span class="secure">Privacy, clearly explained</span>
+  </div>
+
+  <header class="hero">
+    <div class="eyebrow">Your data. Your drive.</div>
+    <h1>Mimis OBD - Privacy Policy</h1>
+    <p class="updated">Last updated: 18 November 2026</p>
+    <div class="hero-rule" aria-hidden="true"></div>
+  </header>
+
+  <div class="layout">
+    <aside class="side" aria-label="Policy navigation">
+      <label class="tools">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Search this policy" aria-label="Search this policy">
+      </label>
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc-title">On this page</p>
+        <div id="toc-list"></div>
+      </nav>
+    </aside>
+
+    <main class="policy" id="policy">
+      <p class="intro">Mimis OBD (“the app”) is a vehicle dashboard that reads data from your car through a
+      Bluetooth or Wi-Fi OBD-II (ELM327) adapter. This policy explains what the app does with
+      information. The app has no user accounts and does not require registration. There is no
+      Mimis OBD server; the developer does not operate a backend that receives your data.</p>
+
+      <section id="information-stored-only-on-your-device">
+        <h2>Information stored only on your device</h2>
+        <p>The following is saved locally on your phone and is not uploaded to the developer or anyone else:</p>
+        <ul>
+          <li>App settings (your chosen dashboard name label, car, theme, units, Wi-Fi adapter address, fuel level).</li>
+          <li>The last GPS position (latitude and longitude). The app keeps your most recent coordinates on the
+              device so it can re-center the map and fetch local weather. They are stored only for this purpose.</li>
+          <li>Trip history (your last trips: time, speed, GPS speed, gear, RPM, temperature, fuel, and any fault
+              codes seen). Trip history does not store your route or raw coordinates.</li>
+          <li>Fault-code history (diagnostic trouble codes with the date and time they were seen).</li>
+          <li>Notifications and alerts.</li>
+          <li>Drive recordings used for playback.</li>
+          <li>Vehicle information read from the adapter (for example speed, RPM, temperatures, fuel data, and,
+              where your car reports them, the VIN and calibration IDs). This is used to display and diagnose, and
+              is kept on the device.</li>
+          <li>An optional photo of your car and an optional custom 3D model. These are processed on the device
+              (including background removal) and stored on the device; they are not transmitted.</li>
+        </ul>
+        <p>This locally stored information stays on your device unless you explicitly export or share it
+        (see “Exporting your data” below).</p>
+      </section>
+
+      <section id="information-sent-off-your-device">
+        <h2>Information sent off your device</h2>
+        <p>The app transmits data off your device only in these two cases, and only over an encrypted (HTTPS)
+        connection:</p>
+        <ul>
+          <li><strong>Google Maps:</strong> when a map is shown, your precise location (latitude and longitude)
+              is sent to Google to draw the map and center it on you, using the Google Maps Embed API.</li>
+          <li><strong>Weather (Open-Meteo):</strong> your location coordinates (rounded to about 100 metres) are
+              sent to the Open-Meteo weather service (<code>api.open-meteo.com</code>) to show the local
+              temperature in the app’s top bar.</li>
+        </ul>
+        <p>No other information is transmitted automatically. Location is used only while you are using the app;
+        the app does not request or use background location.</p>
+      </section>
+
+      <section id="third-party-services">
+        <h2>Third-party services</h2>
+        <ul>
+          <li>Google Maps Platform - your location is processed by Google when a map is displayed, under the
+              <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the
+              <a href="https://cloud.google.com/maps-platform/terms">Google Maps Platform Terms</a>.</li>
+          <li>Open-Meteo - receives coordinates to return local weather. See
+              <a href="https://open-meteo.com/en/terms">Open-Meteo’s terms</a>.</li>
+        </ul>
+      </section>
+
+      <section id="exporting-your-data">
+        <h2>Exporting your data</h2>
+        <p>Trip history, fault codes, recordings, and vehicle information leave your device only when you choose
+        to. If you tap “Export troubleshooting report” or “Create repair report (PDF)”, the app opens your phone’s
+        standard share or print screen so you can send or save the report to a destination you pick. The app does
+        not send these reports anywhere on its own.</p>
+      </section>
+
+      <section id="advertising-and-analytics">
+        <h2>Advertising and analytics</h2>
+        <p>The app contains no advertising, no analytics, and no third-party tracking or crash-reporting software.</p>
+      </section>
+
+      <section id="permissions">
+        <h2>Permissions</h2>
+        <ul>
+          <li>Location (foreground only) - map position, GPS speed, and local weather.</li>
+          <li>Bluetooth - connect to your OBD-II adapter.</li>
+          <li>Notifications - the coolant-overheat alarm and the “running” notice while connected.</li>
+          <li>Network/Wi-Fi state - load the map and weather, and use a Wi-Fi OBD adapter.</li>
+        </ul>
+      </section>
+
+      <section id="how-to-delete-your-information">
+        <h2>How to delete your information</h2>
+        <p>Because the app stores information only on your device, you control it directly:</p>
+        <ul>
+          <li>Reset the current trip from the Trip page.</li>
+          <li>Clear fault-code history and clear notifications from the Alerts screen.</li>
+          <li>Delete saved drive recordings in Settings.</li>
+          <li>Clear the app’s data in Android Settings → Apps → Mimis OBD → Storage, or uninstall the app, to
+              remove everything it has stored.</li>
+        </ul>
+        <p>There is no server-side copy to request deletion of.</p>
+      </section>
+
+      <section id="children">
+        <h2>Children</h2>
+        <p>The app is a vehicle tool and is not directed to children.</p>
+      </section>
+
+      <section id="changes-to-this-policy">
+        <h2>Changes to this policy</h2>
+        <p>If the app’s data practices change, this policy will be updated and the “last updated” date above will
+        change.</p>
+      </section>
+
+      <footer>
+        Contact: <a href="mailto:Mosamimis@gmail.com">Mosamimis@gmail.com</a><br>
+        <span class="footer-brand">Made by MIMIS</span>
+      </footer>
+      <p class="empty" id="empty">No matching sections found.</p>
+    </main>
+  </div>
+</div>
+<button class="to-top" id="to-top" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+  const sections = [...document.querySelectorAll('.policy section')];
+  const toc = document.getElementById('toc-list');
+  const search = document.getElementById('search');
+  const empty = document.getElementById('empty');
+  const links = sections.map(section => {
+    const heading = section.querySelector('h2');
+    const link = document.createElement('a');
+    link.href = `#${section.id}`;
+    link.textContent = heading.textContent;
+    toc.append(link);
+    return link;
+  });
+  const contentBlocks = [document.querySelector('.intro'), ...sections, document.querySelector('footer')];
+  function clearHighlights() {
+    document.querySelectorAll('mark.search-match').forEach(mark => mark.replaceWith(document.createTextNode(mark.textContent)));
+  }
+  function highlightMatches(query) {
+    if (!query) return;
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const pattern = new RegExp(escaped, 'gi');
+    const walker = document.createTreeWalker(document.getElementById('policy'), NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (!node.nodeValue.trim() || node.parentElement.closest('script, style, mark, #empty')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      pattern.lastIndex = 0;
+      const value = node.nodeValue;
+      if (!pattern.test(value)) return;
+      pattern.lastIndex = 0;
+      const fragment = document.createDocumentFragment();
+      let start = 0;
+      for (const match of value.matchAll(pattern)) {
+        fragment.append(document.createTextNode(value.slice(start, match.index)));
+        const mark = document.createElement('mark');
+        mark.className = 'search-match';
+        mark.textContent = match[0];
+        fragment.append(mark);
+        start = match.index + match[0].length;
+      }
+      fragment.append(document.createTextNode(value.slice(start)));
+      node.replaceWith(fragment);
+    });
+  }
+  search.addEventListener('input', () => {
+    clearHighlights();
+    const query = search.value.trim();
+    const normalized = query.toLocaleLowerCase();
+    let visible = 0;
+    contentBlocks.forEach((block, i) => {
+      const matches = !normalized || block.textContent.toLocaleLowerCase().includes(normalized);
+      if (block.tagName === 'SECTION') {
+        block.hidden = !matches;
+        links[i - 1].hidden = !matches;
+      } else {
+        block.hidden = Boolean(normalized) && !matches;
+      }
+      if (matches) visible++;
+    });
+    empty.style.display = visible ? 'none' : 'block';
+    highlightMatches(query);
+  });
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(link => link.classList.toggle('active', link.hash === `#${entry.target.id}`));
+      }
+    });
+  }, { rootMargin: '-15% 0px -70% 0px' });
+  sections.forEach(section => observer.observe(section));
+  const topButton = document.getElementById('to-top');
+  const progress = document.getElementById('progress');
+  window.addEventListener('scroll', () => {
+    const range = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = `${range > 0 ? (window.scrollY / range) * 100 : 0}%`;
+    topButton.classList.toggle('visible', window.scrollY > 380);
+  }, { passive: true });
+  topButton.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
